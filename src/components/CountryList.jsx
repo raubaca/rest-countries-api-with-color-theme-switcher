@@ -58,6 +58,12 @@ const Card = styled.article`
   border-radius: 0.8rem;
   box-shadow: var(--shadow);
   overflow: hidden;
+  @media (hover: hover) {
+    transition: transform 0.2s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `;
 
 const Flag = styled.img`

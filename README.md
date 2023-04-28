@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Vercel]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-react-router-1jRsPccHw0)
+- Live Site URL: [Vercel](https://rest-countries-api-with-color-theme-switcher-rau.vercel.app/)
 
 ## My process
 
