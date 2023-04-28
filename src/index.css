@@ -1,0 +1,91 @@
+:root {
+  --dark-blue: hsl(209, 23%, 22%);
+  --x-dark-blue: hsl(207, 26%, 17%);
+  --xx-dark-blue: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Light theme */
+  --background-color: var(--light-gray);
+  --element-color: var(--white);
+  --input-color: var(--xx-dark-blue);
+  --text-color: var(--xx-dark-blue);
+
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.07);
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --background-color: var(--x-dark-blue);
+  --element-color: var(--dark-blue);
+  --input-color: var(--white);
+  --text-color: var(--white);
+}
+
+/* Reset */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  appearance: none;
+  font: inherit;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Base */
+
+body {
+  font-size: 1.2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+:focus {
+  outline-color: transparent;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
