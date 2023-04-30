@@ -9,10 +9,8 @@ const CountryList = ({ countries }) => (
     <List>
       {countries.map((country) => (
         <li key={country.cca3}>
-          <Card key={country.cca3}>
-            <Link to={`/${country.cca3.toLowerCase()}`}>
-              <Flag src={country.flags.svg} alt={country.name.common} />
-            </Link>
+          <Card to={`/${country.cca3.toLowerCase()}`}>
+            <Flag src={country.flags.svg} alt={country.name.common} />
             <Info>
               <Title>{country.name.common}</Title>
               <Text>
@@ -53,7 +51,10 @@ const List = styled.ul`
   }
 `;
 
-const Card = styled.article`
+const Card = styled(Link)`
+  display: block;
+  color: inherit;
+  text-decoration: none;
   background-color: var(--element-color);
   border-radius: 0.8rem;
   box-shadow: var(--shadow);

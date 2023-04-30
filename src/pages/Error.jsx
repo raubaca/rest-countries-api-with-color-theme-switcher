@@ -13,7 +13,7 @@ const Error = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.section`
   text-align: center;
 `;
 

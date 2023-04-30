@@ -2,17 +2,23 @@ import { createContext } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Header from './components/Header';
 import { useTheme } from './hooks/useTheme';
+import { API_URL } from './utils/constants';
+
+import Header from './components/Header';
 
 export const AppContext = createContext(null);
 
+// eslint-disable-next-line react-refresh/only-export-components
+export const loader = async () =>
+  fetch(`${API_URL}all?fields=name,capital,region,population,cca3,flags`);
+
 const App = () => {
-  const countries = useLoaderData();
+  const data = useLoaderData();
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <AppContext.Provider value={{ data: countries, theme }}>
+    <AppContext.Provider value={{ data, theme }}>
       <Header onSwitchTheme={toggleTheme} theme={theme} />
       <Main>
         <Outlet />

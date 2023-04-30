@@ -1,9 +1,6 @@
-import { useContext, useEffect, useState } from 'react';
-import { AppContext } from '../App';
+import { useEffect, useState } from 'react';
 
-export const useCountries = () => {
-  const { data } = useContext(AppContext);
-
+export const useCountries = (data) => {
   const [countries, setCountries] = useState(data);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState('');

@@ -51,7 +51,7 @@ Controls.propTypes = {
 
 const Container = styled.section`
   display: grid;
-  gap: 3rem;
+  gap: 2.5rem;
   margin-bottom: 2.5rem;
   @media screen and (min-width: 769px) {
     grid-template-columns: 48rem 20rem;

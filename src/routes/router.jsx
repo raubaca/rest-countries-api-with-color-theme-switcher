@@ -1,10 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import App, { loader as appLoader } from '../App';
 import Countries from '../pages/Countries';
-import Country from '../pages/Country';
-import App from '../App';
+import Country, { loader as countryLoader } from '../pages/Country';
 import Error from '../pages/Error';
-import { appLoader, countryLoader } from './loaders';
 
 export const router = createBrowserRouter([
   {
