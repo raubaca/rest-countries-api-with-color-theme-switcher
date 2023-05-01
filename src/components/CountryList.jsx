@@ -10,7 +10,12 @@ const CountryList = ({ countries }) => (
       {countries.map((country) => (
         <li key={country.cca3}>
           <Card to={`/${country.cca3.toLowerCase()}`}>
-            <Flag src={country.flags.svg} alt={country.name.common} />
+            <Flag
+              src={country.flags.svg}
+              alt={country.name.common}
+              width="100%"
+              height="100%"
+            />
             <Info>
               <Title>{country.name.common}</Title>
               <Text>

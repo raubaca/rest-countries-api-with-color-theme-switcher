@@ -10,7 +10,7 @@ const Header = ({ onSwitchTheme, theme }) => {
     <Container>
       <Title>Where in the world?</Title>
       <Toggle type="button" onClick={onSwitchTheme}>
-        <img src={themeLight ? moon : sun} alt="Moon" width={16} />
+        <img src={themeLight ? moon : sun} alt="Moon" width="16" height="16" />
         <span>{themeLight ? 'Dark' : 'Light'} Mode</span>
       </Toggle>
     </Container>
